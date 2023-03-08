@@ -1,0 +1,17 @@
+import math
+#Definindo a função para determinar se o número informado é um quadrado perfeito
+def raiz(x):
+    if(n<0):
+        print('Informe apenas números positivos')
+    
+    #Um número pertence a sequência de Fibo se um ou ambos (5.n²+4) ou (5.n²-4) forem quadrados perfeitos
+    #sendo n o número informado
+    #utilizou-se as funções floor e ceil para fazer as devidas comparações
+    elif (math.ceil(math.sqrt(5*n*n + 4)) == math.floor(math.sqrt(5*n*n + 4))) or (math.ceil(math.sqrt(5*n*n - 4)) == math.floor(math.sqrt(5*n*n - 4)) ):
+        print ('Pertence a sequência de Fibonacci ')
+    
+    else:
+        print('Não pertence a sequência de Fibonacci')
+        
+n = int(input('Informe um número: '))
+raiz(n)
