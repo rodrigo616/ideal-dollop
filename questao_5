@@ -1,0 +1,2 @@
+nome = input("Digite alguma coisa: ")
+print("Entrada invertida: ",nome[::-1])
