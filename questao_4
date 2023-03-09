@@ -1,0 +1,13 @@
+v1=110
+v2=80
+d=100
+t_cam=d/v2 + 0.17 #tempo de viagem do caminhão + os 10 minutos que ele gasta nos pedágios - 10 min = 0,17h
+vmed_cam=d/t_cam #velocidade média do caminhão
+
+#sabendo que eles levam o mesmo tempo para encontrar e no mesmo ponto, então basta igualar o tempo de viagem
+#dos dois veiculos 
+#t_1 = t_2
+#x-1/v_1 = (x_2-100)/-v_2
+#assumindo x_1 = x_2 = x, que é a distância do ponto de referência (Ribeirão Preto), e isolando x
+x=(v1*100)/(v1+vmed_cam)
+print('Os dois veículos se cruzaram a uma distância de {:.2f} km de Ribeirão Preto' .format(x))
